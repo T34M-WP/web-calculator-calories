@@ -66,14 +66,14 @@ function gain() {
 }
 
 function daily() {
-    let qrt = prompt("โปรดระบุอาหารที่กินไปในวันนี้")
+    let qrt = prompt("โปรดระบุจำนวนอาหารที่กินไปในวันนี้")
     let sum = 0
     for (var i = 1; i <= qrt; i++) {
 
-        let item_price = prompt("แคลลอลี่ของอาหารอย่างที่ " + i)
+        let item_calories = prompt("แคลลอลี่ของอาหารอย่างที่ " + i)
         document.getElementById("calories-list").innerHTML += "แคลลอลี่ของอาหารอย่างที่ " + i + ": " + item_price + " Calories" + "<br>"
 
-        sum = sum + parseInt(item_price)
+        sum = sum + parseInt(item_calories)
 
 
 
